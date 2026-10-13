@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <script
+      src="https://kit.fontawesome.com/8c03ffc726.js"
+      crossorigin="anonymous">
+</script>
+<style>
+   .product-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+/* Image Gallery */
+.image-gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.image-gallery img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.nav-btn {
+  position: absolute;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.nav-btn.left { left: 10px; }
+.nav-btn.right { right: 10px; }
+
+/* Typography */
+.product-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Grid Layouts */
+.specs-grid, .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.pricing-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+/* Spec Cards */
+.spec-card {
+  background-color: #f7f7f7;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.spec-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc; /* Dashed line matching the design */
+  width: 80%;
+}
+.spec-value {
+  color: #a87d60; /* The brownish copper text color */
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.action-buttons button {
+  background-color: #8c6a51;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.action-buttons button:hover {
+  background-color: #705541;
+}
+    
+    
+
+   
+</style>
+        
+   
+    
+        
+    
+</head>
+<body>
+    <!-- HEADER START -->
+     <header>
+
+    
+        <h1><img src="/logos/velora.png" alt="" width="250x" height="120px"></h1>
+        <nav>
+            <a href="index.html">homes</a>
+            <a href="bikedeal.html">bikedeals</a>
+            <a href="accessories.html">accessories</a>
+             <a href="seaftygear.html">seafty gear</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="cart.html">cart</a>
+            <a href="login.html">login</a>
+
+        </nav>
+    </header>
+    <div class="product-container"></div>
+  <!-- 1. Image Gallery Placeholder -->
+  <div class="image-gallery">
+    <button class="nav-btn left">&lt;</button>
+    <img src="your-motorcycle-image.jpg" alt="Triumph Tiger 1200" />
+    <button class="nav-btn right">&gt;</button>
+  </div>
+
+  <!-- 2. Product Title -->
+  <h2 class="product-title">TRIUMPH TIGER 1200 RALLY EXPLORER</h2>
+
+  <!-- 3. Specs Grid -->
+  <div class="specs-grid">
+    <div class="spec-card">
+      <span class="spec-label">Brand</span>
+      <span class="spec-value">Triumph</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-label">Model Year</span>
+      <span class="spec-value">2022</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-label">ODO Reading</span>
+      <span class="spec-value">4084 KM</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-label">Colour</span>
+      <span class="spec-value">SNOW DONIA WHITE</span>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+
+  <!-- Pricing -->
+  <div class="pricing-grid">
+    <div class="spec-card">
+      <span class="spec-label">New Ride Price</span>
+      <span class="spec-value">₹ 25,20,000</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-label">Boss Ride Price</span>
+      <span class="spec-value">₹ 17,99,000</span>
+    </div>
+  </div>
+
+  <!-- 4. Action Buttons -->
+  <div class="action-buttons">
+    <button>Request a Callback</button>
+    <button>Book This Ride</button>
+    <button>WhatsApp Us</button>
+    <button>Call Us</button>
+  </div>
+</div>

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <script
+      src="https://kit.fontawesome.com/8c03ffc726.js"
+      crossorigin="anonymous">
+</script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/* SEARCH BAR */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to bottom, grey,black);
+    height: 10%;
+}
+
+.search-box input {
+    width: 150px;
+    padding: 10px 15px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 14px;
+}
+
+.search-box button {
+    padding: 10px 14px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    background: white;
+    color: white;
+}
+/* BANNER */
+.name img{
+    width: 250px;
+    height: 150px;
+   
+   
+}
+.banner-accessories{
+       
+    background: url(/accessories/Gemini_Generated_Image_jnx9cjjnx9cjjnx9.png) no-repeat center center/cover;
+    height: 60vh;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+  
+} 
+/* ICONS */
+  .category-icon {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    overflow: auto;
+    background: white;
+    justify-content: center;
+
+}
+
+.icon-box {
+    min-width: 120px;
+    text-align: center;
+    cursor: pointer;
+    
+
+}
+
+.icon-box img {
+    width: 80px;
+    height: 90px;
+    border-radius: 40%;
+    border: 2px solid grey;
+    padding: 5px;
+    
+}
+
+.icon-box a {
+    margin-top: 8px;
+    font-size: 14px;
+
+}
+
+.icon-box img:hover {
+    margin: 8px;
+    transform: scale(1.2);
+   
+}
+
+.icon-box a:hover {
+    color: red;
+
+}
+/* HELMETS */
+.helmet{
+    /* overflow: scroll; */
+
+    
+   
+}
+.helmet-content{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap:10px;
+}
+.helmet-content img{
+    width: 200px;
+    height: 150px;
+    
+    
+    
+    
+}
+.helmet-img {
+    box-shadow: 5px 5px 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    
+}
+.helmet-img img:hover{
+    transform: scale(1.1);
+    transition: 1.2s;
+}
+
+
+
+
+
+
+
+</style> 
+</head>
+<body>
+    <!-- HEADER START -->
+     <header>
+
+    
+        <h1>  <img src="/logos/velora.png" alt="" width="250x" height="120px"></h1>
+        <nav>
+            <a href="index.html">homes</a>
+            <a href="bikedeal.html">bikedeals</a>
+            <a href="accessories.html">accessories</a>
+            <a href="seaftygear.html">seafty gear</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="cart.html">cart</a>
+            <a href="login.html">login</a>
+
+        </nav>
+    </header>
+    <section class="search-bar">
+        <div class="name">
+           <img src="/imgs/l-removebg-preview.png" alt="">
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Search bikes...">
+            <button>🔍</button>
+        </div>
+    </section>
+    <!-- ICONS -->
+    <section class="banner-accessories">
+        
+    </section>
+    <section class="icon">
+      
+    <div class="category-icon">
+      <div class="icon-box">
+       <a href="helmetimg.html">
+       <img src="/accessories/helmet1.jpg" alt="" /> 
+        <!-- <p>HELMET</p> -->
+        <a href="helmetimg.html">HELMET</a>
+      </div>
+
+      <div class="icon-box">
+        <img src="/accessories/helmet/gloves/gloves2.jpg" alt="" />
+        <!-- <p>GLOVES</p> -->
+         <a href="">gloves</a>
+      </div>
+
+      <div class="icon-box">
+        <img src="/accessories/ridingboot1.jpg" alt="" />
+        <p>RIDINGBOOT</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="/accessories/touringboot1.jpg" alt="" />
+        <p>TOURINGBOOT</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="/accessories/racingjacket1.jpg" alt="" />
+        <p>R.JACKET</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="/accessories/airbag1.jpg" alt="" />
+        <p>R.AIRBAG</p>
+      </div>
+
+      <div class="icon-box">
+        <img src="/accessories/exhaues1.jpg" alt="" />
+        <p>EXHAUEST</p>
+      </div>
+    </div>
+    </section>
+    <!-- HELMETS -->
+
+    <section class="helmet">
+        <h2>TOP SELLING HELMET</h2>
+        <div class="helmet-content">
+            <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Axor Apex Solid Gloss Black</h3>
+                <img src="/accessories/helmet3.webp" alt="KYT Helmet">
+                <h2>₹4,999</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: DOT & ISI certified aerodynamic polycarbonate shell, dual EPS liner, anti-fog pinlock-ready visor, aur washable moisture-wicking cheek pads.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>KYT TT Course Plain / Solid</h3>
+                <img src="/accessories/kyt.jpg" alt="KYT Helmet">
+                <h2>₹7,499</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: ECE 22.05 approved ADT-Advanced thermoplastic shell, wind-tunnel tested spoiler, quick-release visor mechanism, aur track-focused airflow.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+       
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>KYT TT Course Leopard Replica </h3>
+                <img src="/accessories/helmet1.jpg" alt="KYT Helmet">
+                <h2>₹7,900</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: ADT Advanced Thermoplastic shell, racing-inspired Leopard replica livery, Pinlock MaxVision 70 compatible, and wind-tunnel tested aerodynamics.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>AGV Pista GP RR Acqua Carbon</h3>
+                <img src="/accessories/helmet8.jpg" alt="KYT Helmet">
+                <h2>₹1,90,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: 100% extreme carbon fiber shell, FIM homologated, 5-density EPS, included hydration system, and detachable PRO spoiler.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>KYT NF-R Custom</h3>
+                <img src="/accessories/helmet2.webp" alt="KYT Helmet">
+                <h2>₹6,500</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Advanced thermoplastic shell, integrated sun visor, aerodynamic design, and ECE certified for high-speed stability.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Spyder Polycarbonate Helmet</h3>
+                <img src="/accessories/helmet4.jpg" alt="KYT Helmet">
+                <h2>₹5,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: High-impact polycarbonate shell, quick-release visor mechanism, breathable internal lining, and DOT approved.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>   
+        </div>
+    </section>
+    <!-- GLOVES -->
+     <section class="helmet">
+        <h2>TOP SELLING GLOVES</h2>
+        <div class="helmet-content">
+                
+               <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars SP-8 v3 Gloves</h3>
+                <img src="/accessories/gloves2.webp" alt="KYT Helmet">
+                <h2>₹9,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Full-grain leather construction, hard knuckle protector, and touchscreen compatible fingertips for modern touring.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Monster Energy SMX-1 Air V2</h3>
+                <img src="/accessories/helmet/gloves/gloves1.jpg" alt="KYT Helmet">
+                <h2>₹5,500</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Short cuff design, breathable mesh and leather construction, and carbon knuckle protection with Monster Energy branding.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars GP Plus R V2 Gloves</h3>
+                <img src="/accessories/gloves3.png" alt="KYT Helmet">
+                <h2>₹18,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Track-ready full leather construction, dynamic friction shield knuckle, and Alpinestars patented finger bridge.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Five RFX1 Racing Gloves</h3>
+                <img src="/accessories/gloves4.jpg" alt="KYT Helmet">
+                <h2>₹15,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Premium racing gloves with Kevlar lining, ventilated TPR knuckles, and a high-abrasion TPU palm slider.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Rev'it Sand 4 Adventure Gloves</h3>
+                <img src="/accessories/helmet/gloves/gloves2.jpg" alt="KYT Helmet">
+                <h2>₹8,500</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Adventure touring gloves with ventilated TPR knuckles, goat leather palms, and a highly breathable mesh chassis.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Royal Enfield Classic Short Gloves</h3>
+                <img src="/accessories/gloves.jpg" alt="KYT Helmet">
+                <h2>₹2,500</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Lightweight textile and leather mix, basic impact padding, and ideal for daily city commutes.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        
+        </div>
+    </section>
+    <!-- RIDINGBOOT -->
+    <section class="helmet">
+        <h2>TOP SELLING RIDINGBOOT</h2>
+        <div class="helmet-content">
+                
+               <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Sidi Rex Racing Boots</h3>
+                <img src="/accessories/ridingboot1.jpg" alt="KYT Helmet">
+                <h2>₹35,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Top-tier racing boot featuring the Techno-3 push closure system and replaceable shin plates and sliders.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Dainese Nexus 2 Boots</h3>
+                <img src="/accessories/racingboot3.jpg" alt="KYT Helmet">
+                <h2>₹22,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Microfiber upper with the D-Axial articulated anti-twist back ankle protection system.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Sidi Mag-1 Sport Boots</h3>
+                <img src="/accessories/racingboot4.jpg" alt="KYT Helmet">
+                <h2>₹30,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Lightweight track boot with a micrometric Tecno-3 magnetic closure system and internal support brace.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Stella SMX-6 V2 Boots</h3>
+                <img src="/accessories/racingboot2.png" alt="KYT Helmet">
+                <h2>₹24,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Advanced microfiber upper, TPU lateral ankle brace, and breathable interior lining designed for sport riding.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Dainese Torque 3 Out Boots</h3>
+                <img src="/accessories/ridingboot0.webp" alt="KYT Helmet">
+                <h2>₹32,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Premium track boot featuring a D-Axial system in TPU, magnesium sliders, and highly durable D-Stone fabric.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Supertech R Boots</h3>
+                <img src="/accessories/ridingboot00.webp" alt="KYT Helmet">
+                <h2>₹45,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: MotoGP-level racing boot featuring a separate internal biomechanical ankle brace and ultra-durable microfiber upper.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- TOURINGBOOT -->
+     <section class="helmet">
+        <h2>TOP SELLING TOURINGBOOT</h2>
+        <div class="helmet-content">
+                
+               <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Sidi Adventure 2 Gore-Tex Boots</h3>
+                <img src="/accessories/touringboot1.jpg" alt="KYT Helmet">
+                <h2>₹35,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Full-grain microfiber, PU shin plate, micro-adjustable buckle system, and a waterproof Gore-Tex membrane.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Corozal Adventure Drystar Boots</h3>
+                <img src="/accessories/touringboot2.png" alt="KYT Helmet">
+                <h2>₹28,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Multi-material upper with a Drystar waterproof membrane and an advanced polymer buckle system.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Sidi Crossfire 3 SRS Boots</h3>
+                <img src="/accessories/touringboot3.webp" alt="KYT Helmet">
+                <h2>₹42,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Premium off-road and adventure boot featuring a hyper extension block and sole replacement system.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Corozal Adventure Oiled Leather Boots</h3>
+                <img src="/accessories/touringboot4.webp" alt="KYT Helmet">
+                <h2>₹47,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span >(4.9)</span></div>
+            <p>Details: Premium oiled leather construction, biomechanical ankle flexi-blade system, and full waterproof Drystar membrane.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Tech 7 Enduro Boots</h3>
+                <img src="/accessories/touringboot5.jpg" alt="KYT Helmet">
+                <h2>₹32,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Engineered enduro sole for superior grip, dual compound foot shell, and an advanced pivot system.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Web Gore-Tex Touring Boots</h3>
+                <img src="/accessories/touringboot0.webp" alt="KYT Helmet">
+                <h2>₹20,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Subtle styling for long-distance touring with a guaranteed waterproof Gore-Tex lining and side entry zipper.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- RIDING JACKET -->
+    <section class="helmet">
+        <h2>TOP SELLING RIDING JACKET</h2>
+        <div class="helmet-content">
+                
+            <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Missile V2 Leather Suit</h3>
+                <img src="/accessories/racingjacket1.jpg" alt="KYT Helmet">
+                <h2>₹90,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Premium bovine leather construction, Tech-Air compatible, and DFS armor on shoulders, elbows, and knees.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Dainese Laguna Seca 5 Leather Suit</h3>
+                <img src="/accessories/racingjacket2.jpg" alt="KYT Helmet">
+                <h2>₹1,10,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Tutu cowhide leather with a tri-axial elasticated insert on the back and seamless aluminum plates on the shoulders.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars GP Plus V3 Leather Suit</h3>
+                <img src="/accessories/racingjacket3.jpg" alt="KYT Helmet">
+                <h2>₹85,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Track-ready 1-piece suit equipped with strategically positioned accordion stretch panels and CE level 1 armor.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Dainese Assen 2 Leather Suit</h3>
+                <img src="/accessories/racingjacket4.jpg" alt="KYT Helmet">
+                <h2>₹80,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Highly ventilated perforated leather, aerodynamic hump, and floating shoulders with aluminum plates.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Berik 1-Piece Racing Suit</h3>
+                <img src="/accessories/racingjacket5.jpg" alt="KYT Helmet">
+                <h2>₹65,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Full-grain cowhide leather with high-tensile stretch fabric at the elbows, crotch, and back knees for flexibility.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Brera Leather Jacket</h3>
+                <img src="/accessories/r.jacket0.webp" alt="KYT Helmet">
+                <h2>₹40,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Vintage-styled full-grain leather, removable thermal liner, and low-profile CE certified bio-armor.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- RIDING AIRBAG -->
+     <section class="helmet">
+        <h2>TOP SELLING RIDING AIRBAGS</h2>
+        <div class="helmet-content">
+                
+             <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Scoyco Armored Bionic Jacket</h3>
+                <img src="/accessories/airbag1.jpg" alt="KYT Helmet">
+                <h2>₹5,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Full body armor under-jacket with high-density foam padding and hard plastic shields for the chest, back, and arms.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Tech-Air Race Ves</h3>
+                <img src="/accessories/airbag2.jpg" alt="KYT Helmet">
+                <h2>₹1,08,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Autonomous airbag system worn under race suits, offering comprehensive coverage for shoulders, chest, ribs, and full back.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Alpinestars Tech-Air 5 System</h3>
+                <img src="/accessories/airbag3.png" alt="KYT Helmet">
+                <h2>₹97,199</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Wearable slim autonomous airbag vest featuring lightweight protection, intelligent crash detection, and comprehensive shoulder, chest, and back coverage.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Helite Turtle 2 Airbag Vest</h3>
+                <img src="/accessories/airbag4.png" alt="KYT Helmet">
+                <h2>₹65,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: High-visibility airbag vest with a tethered deployment system to protect the collarbone, thorax, and spine.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Klim Ai-1 Airbag Vest</h3>
+                <img src="/accessories/airbag5.jpg" alt="KYT Helmet">
+                <h2>₹35,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Lightweight wearable airbag vest with continuous In&motion algorithm updates and an included D3O back protector.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Leatt Body Protector Suit</h3>
+                <img src="/accessories/airbag0.jpg" alt="KYT Helmet">
+                <h2>₹18,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Combines hard shell plastics and 3DF AirFit ventilated soft impact foam for heavy-duty off-road protection.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--  -->
+
+    <section class="helmet">
+        <h2>TOP SELLING RIDING AIRBAGS</h2>
+        <div class="helmet-content">
+                
+             <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>SC-Project Full System Exhaust</h3>
+                <img src="/accessories/exhaues1.jpg" alt="KYT Helmet">
+                <h2>₹95,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+                <p>Details: This is a complete system including the stainless steel headers and a titanium slip-on muffler. It's designed for maximum performance gains and a loud, aggressive racing sound. Includes mounting hardware and springs.</p>
+                <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Lextek Twin Carbon Slip-On Exhaust</h3>
+                <img src="/accessories/exhaust2.jpg" alt="KYT Helmet">
+                <h2> ₹35,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Features dual carbon fiber mufflers and includes the necessary stainless steel link pipes. This system offers a significant weight reduction over stock exhausts and provides a deeper, throatier sound while enhancing the rear-end look of the bike.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Akrapovič Racing Line (Titanium/Carbon) Full Exhaust</h3>
+                <img src="/accessories/exhaust3.jpg" alt="KYT Helmet">
+                <h2> ₹1,40,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: A premium full exhaust system with stainless steel headers and a high-grade titanium muffler finished with a carbon fiber end cap. It's designed to optimize power delivery across the rev range while saving significant weight.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Akrapovič Racing Line </h3>
+                <img src="/accessories/exhaust5.jpg" alt="KYT Helmet">
+                <h2> ₹1,20,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: This full system features a compact titanium muffler designed to sit under the bike, centralizing mass and improving handling. The distinctive honeycomb mesh on the exit adds a unique MotoGP-inspired look.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>LeoVince LV ONE EVO Titanium Slip-On</h3>
+                <img src="/accessories/exhaust6.jpg" alt="KYT Helmet">
+                <h2>₹60,000</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: A lightweight titanium slip-on muffler with a carbon fiber end cap and mounting bracket. It combines classic LeoVince styling with modern materials to provide a sporty sound and improved performance without the need to replace the full header system.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        <!-- product 1 -->
+            <div class="helmet-img">
+                <h3>Moto Torque Bolt Pro Dual Exhaust</h3>
+                <img src="/accessories/exhaust0.webp" alt="KYT Helmet">
+                <h2>₹14,500</h2>
+            <div>⭐⭐⭐⭐⭐ <span>(4.9)</span></div>
+            <p>Details: Premium stainless steel slip-on exhaust system. Includes custom Bolt Pro heat shields, removable DB killers for adjustable sound, aur deep bass exhaust note.</p>
+            <div class="helmet-detial">
+                <button class="btn-view">View Details</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+        </div>
+    </section>
+   </body>
+</html>   
+   

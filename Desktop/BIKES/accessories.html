@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <script
+      src="https://kit.fontawesome.com/8c03ffc726.js"
+      crossorigin="anonymous">
+</script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/* SEARCH BAR */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to bottom, grey,black);
+    height: 10%;
+
+}
+
+.search-box input {
+    width: 150px;
+    padding: 10px 15px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 14px;
+}
+
+.search-box button {
+    padding: 10px 14px;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    background: white;
+    color: white;
+}
+/* BANNER */
+.name {
+    
+   margin: 30px;
+   
+}
+/*  */
+.accessories {
+    padding: 30px;
+    text-align: start;
+    font-size: 15px;
+    background-color: rgb(186, 184, 184);
+    writing-mode: sideways-lr;
+    top: 0;
+    position: fixed;
+    margin-top:20% ;
+    border-radius: 0px 50px 50px 0px;
+    
+   
+}
+..accessories h2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+    
+/*  */
+.pro-name{
+    text-align: center;
+    margin: 20px;
+    
+}
+.pro-name{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 20px;
+}
+.protect-imgage img{
+    width: 250px;
+    height: 200px;
+   
+}
+.protect-imgage{
+    box-shadow: 0 0 20px;
+    border-radius: 20px;
+}
+.protect-imgage p{
+    font-weight: bold;
+}
+.protect-imgage:hover{
+   /* color: aqua; */
+   transform: scale(1.1);
+   transition: 2s;
+}
+/*  */
+
+.papa{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+     border-left-color: black;
+
+}
+.papa{
+    
+    background-color: rgb(255, 136, 0);
+    margin:50px;
+}
+.pimp{
+    display: flex;
+    justify-content: center;
+    border-left: 2px solid black;
+    padding: 20px;
+    
+}
+
+
+/* .papa:hover{
+  color: aqua;
+} */
+
+
+
+
+
+
+</style> 
+</head>
+<body>
+    <!-- HEADER START -->
+     <header>
+
+    
+        <h1>  <img src="/logos/velora.png" alt="" width="250x" height="120px"></h1>
+        <nav>
+            <a href="index.html">homes</a>
+            <a href="bikedeal.html">bikedeals</a>
+            <a href="accessories.html">accessories</a>
+            <a href="seaftygear.html">seafty gear</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="cart.html">cart</a>
+            <a href="login.html">login</a>
+
+        </nav>
+    </header>
+    <section class="search-bar">
+        <div class="name">
+           <h1 style="color: white;">All Categories</h1>
+        </div>
+        <div class="search-box">
+            
+            <input type="text" placeholder="Search accessories...">
+            <button>🔍</button>
+        </div>
+    </section>
+    
+    <!-- HELMETS -->
+     <section class="accessories">
+        <div>
+            <h1>Bike Accessories</h1>
+        </div>
+        
+     </section>
+     <section class="protection">
+         <h2>  1)Bikes Protections</h2>
+        <div class="pro-name" >
+            <div class="protect-imgage">
+                <img src="/crashgurd/gurd.png" alt="">
+                <p>CRASH GAURD</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/3.png" alt="">
+                <p>FLUID GUARDS AND CAP</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/4.jpeg" alt="">
+                <p>MASTER CYLINDER GUARD</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/5.png" alt="">
+                <p>ENGINE GUARD AND SKID PLATE</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/7.png" alt="">
+                <p>RADIATOR GRILL</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/6.png" alt="">
+                <p>HEADLIGHT GRILL</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/8.png" alt="">
+                <p>STAND AND EXTENDERS</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/9.png" alt="">
+                <p>SUM GUARDS</p>
+            </div>
+        </div>
+     </section>
+     <!--  -->
+     <section class="protection">
+        <h2>2) lights</h2>
+        <div class="pro-name">
+            <div class="protect-imgage">
+                <img src="/crashgurd/light.png" alt="">
+                <p>FOG LIGHTS</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/light1.png" alt="">
+                <p>HEADLIGHTSHEADLIGHTS</p>
+            </div>            
+        </div>
+     </section>
+     <!--  -->
+     <section class="protection">
+         <h2>  3)HANDLEBAR</h2>
+        <div class="pro-name">
+            <div class="protect-imgage">
+                <img src="/crashgurd/handal.png" alt="">
+                <p>HANDLE BARS</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/handal2.png" alt="">
+                <p>HANDLE RISER</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/handel2.png" alt="">
+                <p>MOUNTS AND CHARGERS</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/handel4.png" alt="">
+                <p>HANDLE ACCESSORIES</p>
+            </div>
+        </div>
+     </section>
+     <!--  -->
+     <section class="protection">
+         <h2>  4)BODY FAIRING AND FENDERS</h2>
+        <div class="pro-name">
+            <div class="protect-imgage">
+                <img src="/crashgurd/tail1.png" alt="">
+                <p>TAIL TIDY</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/tail2.png" alt="">
+                <p>TYRE HUGGER</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/tail3.png" alt="">
+                <p>MONOGRAM</p>
+            </div>
+        </div>
+     </section>
+     <!--  -->
+     <section class="protection">
+         <h2>  5)BIKE ESSENTIALS</h2>
+        <div class="pro-name">
+            <div class="protect-imgage">
+                <img src="/crashgurd/visor1.png" alt="">
+                <p>VISORS</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/seat.png" alt="">
+                <p>SEATS</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/side2.png" alt="">
+                <p>GRAB RAIL</p>
+            </div>
+
+            <div class="protect-imgage">
+                <img src="/crashgurd/seatring.png" alt="">
+                <p>SEAT RING</p>
+            </div>
+
+             <div class="protect-imgage">
+                <img src="/crashgurd/seat ext.png" alt="">
+                <p>SEAT EXTENDER</p>
+            </div>
+
+             <div class="protect-imgage">
+                <img src="/crashgurd/gps.jpg" alt="">
+                <p>GPS TRACKERS</p>
+            </div>
+        </div>
+     </section>
+     <!--  -->
+     <section class="protection">
+         <h2>  6)FOOT CONTROLS</h2>
+        <div class="pro-name">
+            <div class="protect-imgage">
+                <img src="/crashgurd/footcoul.png" alt="">
+                <p>FOOTREST</p>
+            </div>
+        </div>
+     </section>
+     <!--  -->
+     <section class="papa">
+        <div class="pimp">
+            <a href=""><i class="fa-solid fa-truck-fast"></i></a>
+            <h4>Free Shipping</h4>
+            <p>Free shipping over ₹3000</p>
+        </div>
+        <div class="pimp">
+            <a href=""><i class="fa-solid fa-headset"></i></a>
+            <h4>Support</h4>
+            <p>Contact us 10 AM to 09 PM</p>
+        </div>
+
+        <div class="pimp">
+           <a href=""><i class="fa-solid fa-box"></i></a>
+            <h4>100% Money Back Excluding Shipping</h4>
+            <p>You have 7 days to Return</p>
+        </div>
+
+        <div class="pimp">
+           <a href=""><i class="fa-brands fa-expeditedssl"></i></a>
+            <h4>Payment Secure</h4>
+            <p>We ensure secure payment</p>
+        </div>
+     </section>
+     <!--  -->
+     <footer>
+                <div class="sang">
+                    <div class="sang-box">
+                        <h2>VELORA <span>LUXURY MOTORS</span></h2>
+                        <p> premium bikes, unmatched performance, Vellore brings you the world, most iconic motorcycle crafted For those who live live in the first lane</p>
+                        <div class="sup">
+                            <a href=""><i class="fa-solid fa-shield-halved"></i>100% orignal bikes</a>
+                            <a href=""><i class="fa-solid fa-medal"></i>authorized dealership</a>
+                            <a href=""><i class="fa-solid fa-headset"></i>24/7 support</a>
+                        </div>
+                    </div>
+
+                    <div class="sang-box">
+                        <h3>QUICK LINKS</h3>
+                        <ul>
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="bikedeal.html">deal</a></li>
+                            <li><a href="accessories.html">accessories</a></li>
+                            <li><a href="gallery.html">gallery</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="cart.html">cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sang-box">
+                        <h3>CONTACT US</h3>
+                        <p>info@gmail.com</p>
+                        <p>support@velora.com</p>
+                    </div>
+
+                    <div class="sang-box">
+                        <h3>STAY CONNECT</h3>
+                        <div class="sang-icon">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sang-bottom">
+                    <p>@2025 velora luxury motors. all rights reserved | designed for true riders.</p>
+                </div>
+                
+              </footer>
+     
+             
+    </body>
+</html>
+     

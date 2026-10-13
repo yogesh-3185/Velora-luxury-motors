@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <script
+      src="https://kit.fontawesome.com/8c03ffc726.js"
+      crossorigin="anonymous">
+</script>
+<style>
+    /* .bikes-detials h1{
+        text-align: center;
+    }
+    .bikes-detials {
+        background: url(/imgs/bannergallery.png) no-repeat center center/cover;
+        height: 60vh;
+        
+        display: flex;
+        justify-content:end;
+       align-items: center;
+        color: white;
+        
+    }
+    .bikes-inside h2{
+        font-size: 60px;
+        font-weight: bold;
+
+    }
+    .bikes-inside dd{
+        font-size: 30px;
+        text-align: center;
+    }
+    .bikes-inside button{
+        margin-top: 15%;
+        margin-left: 27%;
+       background-color: red;
+       color: white;
+       font-size: 30px;
+       border: none;
+       text-align: center;
+    }
+
+    .bikes-inside button:hover{
+        background-color: blueviolet;
+        color: black;
+    } */
+    /*  */
+    /* .heading-gallery{
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+        gap: 20px;
+
+    } */
+     .gallery-all{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        /* margin: 30px; */
+     }
+     .specific-image img{
+        width: 200px;
+        height: 150px;
+     }
+    
+    .gallery h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .main-bike img{
+        width: 500px;
+        height: 400px;
+    }
+    .specific-image {
+        display: grid;
+        grid-template-columns: repeat(4, 0fr);
+        gap: 5px;
+        padding-top: 90px;
+        
+    }
+    /* .all-images{
+        box-shadow: 0 0 10px;
+        width: 200px;
+        height: 150px;
+        g
+    } */
+     
+   .gallery{
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+    .gallery-all h2{
+        text-align: center;
+        /* margin-top: 30px; */
+        
+    }
+    .wo{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        
+        margin-top: 40px;
+        border-radius: 10px; 
+        border-bottom:2px solid #705541;
+        background: linear-gradient(to top, rgb(251, 250, 250));
+    }
+    .view{
+      border-right: 2px solid black;
+      padding: 20px;
+      border-radius: 10px 0px;
+      
+    }
+    .price-button{
+      text-align: center;
+      padding-top: 20px;
+    }
+    /*  */
+.product-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* font-family: sans-serif; */
+}
+
+
+
+/* Typography */
+.product-title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+/* Grid Layouts */
+.specs-grid, .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.pricing-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+/* Spec Cards */
+.spec-card {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.spec-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc; /* Dashed line matching the design */
+  width: 80%;
+}
+.spec-value {
+  color: #a87d60; /* The brownish copper text color */
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  
+}
+.action-buttons button {
+  background-color: #8c6a51;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-weight: bold;
+ 
+}
+.action-buttons button:hover {
+  background-color: #705541;
+}
+    
+
+    
+</style>   
+</head>
+<body>
+    <!-- HEADER START -->
+     <header>
+
+    
+        <h1><img src="/logos/velora.png" alt="" width="250x" height="120px"></h1>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="bikedeal.html">bikedeals</a>
+            <a href="accessories.html">accessories</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="cart.html">cart</a>
+            <a href="login.html">login</a>
+
+        </nav>
+    </header>
+    <!-- <section class="bikes-detials">
+        <div class="bikes-inside">
+            <h1>-----Our Gallery----</h1>
+                <h2>Explore Our <span style="color: red;">Bike Gallery</span></h2>
+                 <dd>discover the beauty,<br>
+                    power and style of every ride </dd>
+                <button> Explore Rides</button>
+
+            </div>
+
+    </section> -->
+    <section class="gallery">
+        <h2>WELL COME TO VELORA  </h2>
+        <P>jhewlhlhlh hbihbbh bi</P>
+            <div class="gallery-all">
+                <div class="main-bike">
+                    <a href=""><img src="/imgs/teiumph.jpg" alt=""></a>
+                    <h2>Teiumph Tiger XC</h2>
+                    <div class="wo">
+                        <div class="view">
+                            <h4> Engine capacity</h4>
+                            <span>1215 CC</span>
+                        </div>
+
+                        <div class="view">
+                            <h4> Power</h4>
+                            <span>141 BHP </span>
+                        </div>
+
+                        <div class="view">
+                            <h4> Weight</h4>
+                            <span>248 KG</span>
+                        </div>
+                    </div>
+                    <div class="price-button">
+                      <p>Starting Price<b>₹ 15,90,000 /-</b></p>
+                      <button>Know More</button>
+                      <button>Test Ride</button>
+                    </div>
+                 
+                </div>
+                
+          
+                <div class="specific-image">
+                    <div class="all-images">
+                        <img src="/imgs/t1.jpeg" alt="">
+                    </div>
+             
+                    <div class="all-images">
+                        <img src="/imgs/t2.jpeg" alt="">
+                        
+                    </div>
+             
+                    <div class="all-images">
+                        <img src="/imgs/t3.jpeg" alt="">
+                    </div>
+             
+                    <div class="all-images">
+                        <img src="/imgs/t4.jpeg" alt="">
+                        
+                    </div>
+             
+                    <div class="all-images">
+                        <img src="/imgs/t5.jpeg" alt="">
+                        
+                    </div>
+             
+                    <div class="all-images">
+                        <img src="/imgs/t6.jpeg" alt="">
+                        
+                    </div>
+             
+                    <div class="all-images">
+                        <img src="/imgs/t7.jpeg" alt="">
+                        
+                    </div>
+             
+                    <div class="all-images">
+                        <img src="/imgs/t8.jpeg" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="detial-motor">
+      <div class="product-container"></div>
+  <!-- 3. Specs Grid -->
+  <div class="specs-grid">
+    <div class="spec-card">
+      <span class="spec-label">Brand</span>
+      <span class="spec-value">Triumph</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-label">Model Year</span>
+      <span class="spec-value">2024</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-label">ODO Reading</span>
+      <span class="spec-value">5,500 KM</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-label">Colour</span>
+      <span class="spec-value">MATT KHAKI GREEN</span>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+
+  <!-- Pricing -->
+  <div class="pricing-grid">
+    <div class="spec-card">
+      <span class="spec-label">New Ride Price</span>
+      <span class="spec-value">₹ 21,00,000</span>
+    </div>
+    <div class="spec-card">
+      <span class="spec-label">Velora Ride Price</span>
+      <span class="spec-value">₹ 15,90,000</span>
+    </div>
+  </div>
+
+  <!-- 4. Action Buttons -->
+  <div class="action-buttons">
+    <button>Request a Callback</button>
+    <button>Book This Ride</button>
+    <button>WhatsApp Us</button>
+    <button>Call Us</button>
+  </div>
+</div>
+    </section>
+    <!-- FOOTER START -->
+              <footer>
+                <div class="sang">
+                    <div class="sang-box">
+                        <h2>VELORA <span>LUXURY MOTORS</span></h2>
+                        <p> premium bikes, unmatched performance, Vellore brings you the world, most iconic motorcycle crafted For those who live live in the first lane</p>
+                        <div class="sup">
+                            <a href=""><i class="fa-solid fa-shield-halved"></i>100% orignal bikes</a>
+                            <a href=""><i class="fa-solid fa-medal"></i>authorized dealership</a>
+                            <a href=""><i class="fa-solid fa-headset"></i>24/7 support</a>
+                        </div>
+                    </div>
+
+                    <div class="sang-box">
+                        <h3>QUICK LINKS</h3>
+                        <ul>
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="bikedeal.html">deal</a></li>
+                            <li><a href="accessories.html">accessories</a></li>
+                            <li><a href="gallery.html">gallery</a></li>
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="cart.html">cart</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sang-box">
+                        <h3>CONTACT US</h3>
+                        <p>info@gmail.com</p>
+                        <p>support@velora.com</p>
+                    </div>
+
+                    <div class="sang-box">
+                        <h3>STAY CONNECT</h3>
+                        <div class="sang-icon">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-youtube"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sang-bottom">
+                    <p>@2025 velora luxury motors. all rights reserved | designed for true riders.</p>
+                </div>
+                
+              </footer>
+     
+             
+    </body>
+</html>
+    
+     
