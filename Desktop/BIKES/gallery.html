@@ -56,12 +56,13 @@
     .wo{
         display: flex;
         justify-content: center;
+        text-align: center;
         gap: 10px;
-        
         margin-top: 40px;
         border-radius: 10px; 
         border-bottom:2px solid #705541;
         background: linear-gradient(to top, rgb(251, 250, 250));
+        width: 400px;
     }
     .view{
       border-right: 2px solid black;
@@ -120,11 +121,7 @@
   border-bottom: 1px dashed #ccc; /* Dashed line matching the design */
   width: 80%;
 }
-.spec-value {
-  color: #a87d60; /* The brownish copper text color */
-  font-weight: 600;
-  text-transform: uppercase;
-}
+
 
 /* Action Buttons */
 .action-buttons {
@@ -147,10 +144,36 @@
 .action-buttons button:hover {
   background-color: #705541;
 }
+.pricing-grid span{
+  color:#333;
+  width: 150px;
+  font-size: 25px;
+  border-bottom: 2px dashed #8d8383;
+  padding: 10px;
+}
+.pricing-grid p{
+  color: #705541;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+.specs-grid span{
+  width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+   border-bottom: 2px dashed #8d8383;
+  padding: 10px;
     
 
-    
-</style>   
+}
+.specs-grid p{
+  color: #705541;
+  font-weight: bold;
+  font-size: 20px;
+ 
+
+}
+</style>      
 </head>
 <body>
     <!-- HEADER START -->
@@ -162,11 +185,10 @@
             <a href="index.html">home</a>
             <a href="bikedeal.html">bikedeals</a>
             <a href="accessories.html">accessories</a>
-            <a href="gallery.html">gallery</a>
             <a href="about.html">about</a>
             <a href="contact.html">contact</a>
-            <a href="cart.html">cart</a>
-            <a href="login.html">login</a>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="login.html"><i class="fa-regular fa-circle-user"></i></a>
 
         </nav>
     </header>
@@ -186,22 +208,22 @@
         <P>jhewlhlhlh hbihbbh bi</P>
             <div class="gallery-all">
                 <div class="main-bike">
-                    <a href=""><img src="/imgs/ducati00.jpg" alt=""></a>
+                    <a href=""><img src="/imgs/ducati0.jpg" alt=""></a>
                     <h2>Ducati Panigale V4</h2>
                     <div class="wo">
                         <div class="view">
                             <h4> Engine capacity</h4>
-                            <span>1,103 cc</span>
+                            <span>1,103 CC</span>
                         </div>
 
                         <div class="view">
                             <h4> Power</h4>
-                            <span>219 bhp </span>
+                            <span>219 BHP </span>
                         </div>
 
                         <div class="view">
                             <h4> Weight</h4>
-                            <span>191 kg</span>
+                            <span>191 KG</span>
                         </div>
                     </div>
                     <div class="price-button">
@@ -232,7 +254,8 @@
                         
                     </div>
              
-                    <div class="all-images">
+                    <div class="all-image
+                    s">
                         <img src="/imgs/ducatigallery5.jpeg" alt="">
                         
                     </div>
@@ -251,8 +274,6 @@
                         <img src="/imgs/ducatigallery8.jpg" alt="">
                         
                     </div>
-                    <h4 style="text-align: center; color: red; font-size: 40px;" >THANKS FOR VISITING OUR WEBSITE</h4>
-                    <h5>ighiowhgoighohoghgtgtv</h5>
                 </div>
             </div>
     </section>
@@ -261,20 +282,20 @@
   <!-- 3. Specs Grid -->
   <div class="specs-grid">
     <div class="spec-card">
-      <span class="spec-label">Brand</span>
-      <span class="spec-value">Ducati</span>
+      <span>Brand</span>
+      <p>Ducati</p>
     </div>
     <div class="spec-card">
-      <span class="spec-label">Model Year</span>
-      <span class="spec-value">2025 / 2026</span>
+      <span>Model Year</span>
+      <p>2025</p>
     </div>
     <div class="spec-card">
-      <span class="spec-label">ODO Reading</span>
-      <span class="spec-value">1,250 kM</span>
+      <span>ODO Reading</span>
+      <p>1,250 KM</p>
     </div>
     <div class="spec-card">
-      <span class="spec-label">Colour</span>
-      <span class="spec-value">Ducati Red</span>
+      <span>Colour</span>
+      <p>Ducati Red</p>
     </div>
     <!-- Add more cards as needed -->
   </div>
@@ -282,12 +303,12 @@
   <!-- Pricing -->
   <div class="pricing-grid">
     <div class="spec-card">
-      <span class="spec-label">New Ride Price</span>
-      <span class="spec-value">₹ 37,32,000</span>
+      <span >New Ride Price</span>
+     <p> ₹ 37,32,000</p>
     </div>
     <div class="spec-card">
-      <span class="spec-label">Velora Ride Price</span>
-      <span class="spec-value">₹ 33,70,000</span>
+      <span >Velora Ride Price</span>
+      <p>₹ 33,70,000</p>
     </div>
   </div>
 

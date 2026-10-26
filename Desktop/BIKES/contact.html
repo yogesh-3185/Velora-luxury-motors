@@ -1,41 +1,229 @@
-<section class="helmet">
-    <h2>TOP SELLING HELMETS</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTOX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <script
+      src="https://kit.fontawesome.com/8c03ffc726.js"
+      crossorigin="anonymous">
+</script>
+<style>
     
-    <div class="helmet-content">
-            
-        <!-- Product 1 -->
-        <div class="helmet-img">
-            <h3>Axor Apex Solid Gloss Black</h3>
-            <img src="/accessories/helmet3.webp" alt="Axor Helmet">
-            <h2>Price: ₹4,999</h2>
-            
-            <!-- 5 Star Rating Add Ki Gayi Hai -->
-            <div class="rating">⭐⭐⭐⭐⭐ <span class="rating-text">(4.8)</span></div>
-            
-            <p>Details: DOT & ISI certified aerodynamic polycarbonate shell, dual EPS liner, anti-fog pinlock-ready visor, aur washable moisture-wicking cheek pads.</p>
-            
-            <!-- Dono Buttons Add Kiye Gaye Hain -->
-            <div class="helmet-detial">
-                <button class="btn-view">View Details</button>
-                <button class="btn-cart">Add to Cart</button>
-            </div>
-        </div>
+    .contact
+    {
+        background: linear-gradient(to bottom,grey,rgb(11, 7, 7));
+       
+    }
+    .contact h5{
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    .box-contact button{
+        width: 43vh;
+        padding: 10px;
+        margin-top: 70px;
+        background: linear-gradient(to bottom,orange,rgb(255, 0, 0));
+        border: none;
+        border-radius: 20px;
+        color: white;
+        font-size: 30px;
+    }
+    .contact h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .contact p{
+        font-size: 20px;
+    }
+    .boxes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 150px;
+    }
+    .phone{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        
+    }
+    .box-contact{
+        display: flex;
+        
+        height: 70vh;
+        align-items: center;   
+    }
+    .box-contact form{
+        /* background-color: red; */
+        padding: 30px;
+        width:400px;
+        border-radius: 30px;
+        height: 500px;
+        border:2px solid  orange ;
+        color: white;   
+    }
+    .phone a{
+        font-size: 50px;
+       color: white;
+        
+    }
+    .phone a:hover{
+        color: orange;
+    }
+    .phone{
+        color: aliceblue;
+    }
+    .fill{
+        display: flex;
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;  
+    }
+    .fill div>input{
+        width: 20vh;
+        height: 30px;
+        outline: none;
+        border: 1px solid orange;
+        border-radius: 5px ;
+        background-color: rgb(69, 66, 66);
+        color: white;
+    }
+    .box-contact h3,h1,p{
+        text-align: center;
 
-        <!-- Product 2 -->
-        <div class="helmet-img">
-            <h3>KYT TT Course Plain / Solid</h3>
-            <img src="/accessories/kyt.jpg" alt="KYT Helmet">
-            <h2>Price: ₹7,499</h2>
-            
-            <div class="rating">⭐⭐⭐⭐⭐ <span class="rating-text">(4.9)</span></div>
-            
-            <p>Details: ECE 22.05 approved ADT-Advanced thermoplastic shell, wind-tunnel tested spoiler, quick-release visor mechanism, aur track-focused airflow.</p>
-            
-            <div class="helmet-detial">
-                <button class="btn-view">View Details</button>
-                <button class="btn-cart">Add to Cart</button>
-            </div>
-        </div>
 
-    </div>
-</section>
+    }
+    .box-contact input{
+        width: 43vh;
+        height: 30px;
+        outline: none;
+        border: 1px solid orange;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color:rgb(69, 66, 66) ;
+        color: white;    
+    }
+    .box-contact textarea{ 
+        width: 43vh;
+        height: 12vh;  
+        background-color: rgb(69, 66, 66);
+        border: 1px solid orange;
+        color: white;
+    }
+    .box-contact h3{
+       
+        border-bottom: 5px solid yellow;
+        width: 100%;
+        
+    }
+    
+    
+    
+    
+</style>   
+</head>
+<body>
+    <!-- HEADER START -->
+     <header>
+
+    
+        <h1><img src="/logos/velora.png" alt="" width="250x" height="120px"></h1>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="bikedeal.html">bikedeals</a>
+            <a href="accessories.html">accessories</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="login.html"><i class="fa-regular fa-circle-user"></i></a>
+        </nav>
+    </header>
+    <section class="contact">
+        <h5>Reach Out</h5>
+        <h2>Connect with VÉLORA</h2>
+        <p>Book a test ride, inquire about our premium lineup, or simply drop by our showroom to experience true engineering luxury.</p>
+        <div class="boxes">
+            <div class="box-contact">
+                <form action="">
+                    <h1>CONTACT US</h1>
+                    <h3>Send us a message</h3>
+
+                    <div class="fill">
+                        <div>
+                            <label for="">Full Name</label>
+                            <br>
+                    
+                        <input type="text" placeholder="full name">
+                        </div>
+                        <div>
+                            <label for="">Phone Number</label>
+                        <br>
+                        <input type="" placeholder="+(55) 000-000-0000">
+                        </div>
+                    </div>
+                    <label for="">Email Address</label>
+                    <br>
+                    <input type="email" placeholder="support@gmail.com">
+                    <br>
+                    <label for="">Your Massage</label>
+                    <br>
+                    <textarea name="" id="" placeholder="How can we help you"></textarea>
+                    <button>Send</button>
+
+
+                </form>
+
+            </div>
+
+
+        
+            <div class="phone">
+            
+                <div>
+                    <a href="https://contacts.google.com/"><i class="fa-solid fa-phone"></i></a>
+                    <h4>Phone Number</h4>
+                    <span>+6282 4032 567</span>
+                </div>
+
+                 <div>
+                    <a href="https://mail.google.com/mail/u/0/"><i class="fa-solid fa-envelope"></i></a>
+                    <h4>Email Address</h4>
+                    <span>velora@gmail.com</span>
+                </div>
+
+                 <div>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <h4>Whatsapp</h4>
+                    <span>082-245-7253</span>
+                </div>
+
+                 <div>
+                    <a href="https://maps.google.com/"><i class="fa-solid fa-map-location-dot"></i></a>
+                    <h4>Our Showroom</h4>
+                    <span>187 nandurbar road near bus stand</span>
+                </div>
+
+            </div>
+            
+        </div>
+        
+       
+        <!--  -->
+        
+    </section>
+    <section class="location">
+        <div class="map">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11393.87641230762!2d74.21391903934428!3d21.824896064071215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdf7f8aa42b2acd%3A0x1b36bd6b820599c8!2sDhadgaon%2C%20Maharashtra%20425414!5e0!3m2!1sen!2sin!4v1792139617656!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+        </div>
+        
+        
+        
+    </section>
+    

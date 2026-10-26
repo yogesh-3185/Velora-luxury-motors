@@ -11,31 +11,37 @@
       crossorigin="anonymous">
 </script>
 <style>   
-.auth-container {
-    height: 100vh;
+.first-container {
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, black, grey);
+    background: linear-gradient(135deg,black,grey,black);
+    /* background: url(/imgs/bannergallery.png); */
 }
 
 .auth-box {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    width: 320px;
+    /* background:linear-gradient(135deg,orange,rgb(196, 62, 62)) ; */
+    padding: 20px;
+    border-radius:  00px 100px 00px 100px ;
+    border: 2px solid orangered;
+    width: 420px;
+    height: 500px;
     text-align: center;
-    box-shadow: 0px 8px 30px lightyellow;
+    box-shadow: 0px 8px 30px ;
+}
+.auth-box h1{
+    margin-top: 20px;
 }
 
 .auth-box h2 {
-    margin-bottom: 20px;
+    margin-top: 60px;
     color: black;
 
 }
 
 .auth-box input {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid black;
@@ -49,9 +55,9 @@
 }
 
 .auth-box button {
-    width: 100%;
+    width: 50%;
     padding: 10px;
-    background: red;
+    background: orangered;
     color: white;
     border-radius: 5px;
     margin-top: 10px;
@@ -72,6 +78,22 @@
     color: red;
     text-decoration: none;
 }  
+
+.app{
+    /* display:grid;
+    grid-template-columns: repeat(2,1fr);
+    color: aliceblue; */
+    font-size: 30px;
+    margin-top: 40px; 
+}
+.app a{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-top: 2px solid black;
+    background: linear-gradient(to top,grey,black);
+}
 </style>    
 </head>
 <body>
@@ -85,11 +107,10 @@
             <a href="bikedeal.html">bikedeals</a>
             <a href="accessories.html">accessories</a>
             <a href="seaftygear.html">seafty gear</a>
-            <a href="gallery.html">gallery</a>
             <a href="about.html">about</a>
             <a href="contact.html">contact</a>
-            <a href="cart.html">cart</a>
-            <a href="login.html">login</a>
+            <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+            <a href="login.html"><i class="fa-regular fa-circle-user"></i></a>
 
         </nav>
     </header>
@@ -97,21 +118,28 @@
 
     <!-- STARTING LOGIN -->
 
-     <section class="auth-container">
+     <section class="first-container">
+        
       <div class="auth-box">
-        <h2>Create Account</h2>
+        <h1>velora</h1>
+        <h2>WellCome Back Rider</h2>
+        <p>Loginto access your garage 🏍️</p>
 
         <form>
             
             <input type="Email"placeholder="Email" required>
             <input type="password"placeholder="Password" required>
+            <p><a href="singup.html" style="color: aliceblue;">forget password</a></p>
             <button type="submit">Login</button>
         </form>
-        <p><a href="singup.html">forget password</a></p>
-
-        <p>Dont have an account?<a href="singup.html">singup</a></p>
         
-      </div>
-
+        
+        
+        <p style="color: white;">New to the Pack?<a href="singup.html">Creat an account?</a></p>
+        <div class="app" >
+            <a href="https://play.google.com/store/games?hl=en_IN" style="color: white;"><i class="fa-brands fa-google-play"></i> Google</a>
+            <a href="https://apps.apple.com/in/mac/discover" style="color: white;"><i class="fa-brands fa-apple"></i>MacOS</a>
+        </div>
+        </div>
     </section>
     

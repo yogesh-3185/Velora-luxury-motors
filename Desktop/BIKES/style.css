@@ -1,7 +1,11 @@
+    /* START HEADER  */
     * {
         margin: 0;
         /* padding: 0; */
+
     }
+
+
 
     header {
         background-color: #b6b6b6;
@@ -10,11 +14,9 @@
         justify-content: space-between;
         font-size: 25px;
         text-transform: capitalize;
-        height: 130px;
+        height: 100px;
         border-bottom: 2px solid yellow;
         padding-right: 20px;
-
-
     }
 
     header h1 {
@@ -22,16 +24,46 @@
     }
 
     nav a {
-        color: black;
+        color: #292929;
         text-decoration: none;
-        text-align: center;
+        /* text-align: center; */
+        position: relative;
+        display: inline-block;
+        transition: color 0.5s ease;
     }
 
     nav a:hover {
-        color: white;
-        transform: scale(1.3);
-        transition: 0.3s;
+        color: orangered;
+        ;
     }
+
+    nav a::after {
+
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        background-color: rgb(236, 234, 229);
+        bottom: -5px;
+        left: 0;
+        /* transform: scaleX(0); */
+        transition: width 1s ease;
+        /* transform-origin: left; */
+        background: yellow;
+    }
+
+    nav a:hover::after {
+        width: 100%;
+    }
+
+    /* nav a:hover {
+        
+        text-decoration: underline;
+        transform: translateX(20px, 50px);
+        transition: 0.3s;
+        
+    } */
+
 
     nav {
         display: flex;
@@ -39,46 +71,59 @@
         align-items: center;
     }
 
-    .banner-container {
-        background: url(/imgs/bannernew.jpeg) no-repeat center center/cover;
+    /* END HEADER  */
 
-        height: 86vh;
+
+    /* START BANNER */
+    .banner-container {
+        background: url(/imgs/banner4.png) no-repeat center center/cover;
+        height: 85vh;
         object-fit: cover;
-        display: flex;
-        justify-content: 100px 70px 30px 10px;
+        justify-content: center;
         align-items: center;
-        color: white;
+        text-align: center;
+        color: rgb(247, 247, 247);
+
+
     }
 
+    .banner-content {
+
+        /* background-color: red; */
+        width: 100%;
+    }
 
     .banner-content h2 {
         font-size: 50px;
         font-weight: bold;
+        padding-top: 2%;
+
+
+
     }
 
     .banner-content span {
         font-size: 70px;
-        color: ;
-        font-weight: 2px bold;
+        font-weight: 10px bold;
+        color: greenyellow;
+
     }
 
     .banner-content dd {
         font-size: 35px;
-        margin-left: 40px;
-
+        padding-top: 10px;
 
     }
 
-
     .banner-content button {
-        margin: 90px;
+        margin: 9%;
         color: white;
         background: rgb(79, 62, 40);
         border-radius: 10px;
         cursor: pointer;
         border: 1px solid rgb(124, 117, 117);
         font-size: 25px;
-        margin-left: 25%;
+        /* margin-left: 25%; */
         font-weight: bold;
         padding: 10px;
 
@@ -90,42 +135,43 @@
 
     }
 
+
+
+    /* END BANNER  */
+
     /*  FEATURE LUXURY BIKES */
+
     .container {
         text-align: center;
-        margin: 20px;
+        margin: 40px;
 
-    }
-
-    .container h1,
-    p {
-        text-align: center;
-        /* font-size: 30px; */
-        margin: 20px;
-    }
-
-    .content {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
     }
 
     .content img {
         width: 250px;
         height: 200px;
-        padding: 20px;
-
+        margin: 25px;
     }
 
-    .bike-content {
-        box-shadow: 0 0 5px;
+    .content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
-        border-radius: 5px;
     }
 
     .bike-wing img {
         width: 200px;
-        height: 100px;
+        height: 70px;
+    }
+
+    .bike-content {
+        box-shadow: 0 0 5px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+    .bike-detial {
+        padding: 10px;
     }
 
     .content img:hover {
@@ -139,18 +185,77 @@
         margin-bottom: 5px;
         color: white;
         border: none;
+        width: 100%;
+        font-size: 20px;
+        tex
     }
 
     .bike-content button:hover {
         color: white;
         background-color: rgb(158, 12, 12);
-
-
     }
 
-    /*  */
-    /*  */
+
+    /*  START FEATURE LUXURY BIKES */
+
+    .container {
+        text-align: center;
+        margin: 40px;
+    }
+
+    .content img {
+        width: 250px;
+        height: 200px;
+        margin: 25px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .bike-wing img {
+        width: 200px;
+        height: 70px;
+    }
+
+    .bike-content {
+        box-shadow: 0 0 5px;
+        margin-top: 20px;
+    }
+
+    .bike-detial {
+        padding: 10px;
+    }
+
+    .content img:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    .bike-content button {
+        background-color: rgb(233, 50, 50);
+        padding: 5px;
+        margin-bottom: 5px;
+        color: white;
+        border: none;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .bike-content button:hover {
+        color: white;
+        background-color: rgb(158, 12, 12);
+    }
+
+    /* END FEATURE LUXURY BIKES */
+
     /* PRIME BRANDS */
+    .brands-content {
+        overflow: scroll;
+    }
+
     .brands h2 {
         text-align: center;
         font-size: 30px;
@@ -168,19 +273,21 @@
 
 
     .brand-box {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        display: flex;
+        /* grid-template-columns: repeat(3, 1fr); */
         gap: 2px;
+        overflow: auto;
 
     }
 
     .brand-content {
-        box-shadow: 0px 0px 10px;
-        margin: 10px;
+        box-shadow: 0px 0px 5px;
+
         border-radius: 10px;
 
         object-fit: cover;
         padding: 10PX;
+        margin: 5px;
 
     }
 
@@ -197,14 +304,15 @@
         display: block;
     }
 
-    /*  */
+    /* END PRIME BRAND */
 
-    /* VELORA INFO */
+    /* START VELORA INFO */
     .information h2 {
         text-align: center;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 30px;
+        margin-top: 20px;
     }
 
     .information p {
@@ -230,6 +338,7 @@
 
         object-fit: cover;
         padding: 10PX;
+        margin: 20px;
 
     }
 
@@ -239,8 +348,9 @@
         gap: 2px;
     }
 
-    /*  */
-    /* FOOTER */
+    /* END VELORA INFO */
+
+    /* START FOOTER */
     footer {
 
         background: #b6b6b6;
@@ -282,118 +392,24 @@
         color: red;
     }
 
-    .sang-botton {
+    .sang-bottom p {
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .sang-bottom {
         border-top: 2px solid black;
     }
+
+    .sup {
+        display: flex;
+        margin-top: 20px;
+        width: 200px;
+        justify-content: center;
+        gap: 20px;
+    }
+
 
     /* FOTTER END */
 
     /*START BIKEDEAL */
-
-    .banner2 {
-        background: linear-gradient(to bottom, grey, black);
-        height: 88vh;
-        /* object-fit: cover; */
-        /* display: flex; */
-        /* justify-content: center; */
-        align-items: center;
-        color: white;
-    }
-
-    .info {
-        text-align: center;
-        /* box-shadow: 0 0 20px; */
-        /* padding: 20px; */
-        /* border-radius: 20px; */
-    }
-
-    .info h1 {
-        font-size: 75px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    .info h2 {
-        font-size: 40px;
-        margin-bottom: 30px;
-        padding-top: 10%;
-    }
-
-    .info p {
-        font-size: 18px;
-    }
-
-    .poster {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 5px;
-    }
-
-    .image img {
-        width: 150px;
-        height: 120px;
-        padding-top: 10px;
-    }
-
-    .image {
-        /* border: 10px solid black; */
-        text-align: center;
-        box-shadow: 0 0 5px;
-        border: 2px solid rgb(64, 64, 64);
-        background: linear-gradient(to bottom, rgb(100, 99, 99), rgb(38, 38, 38));
-
-        margin: 10%;
-    }
-
-    .image:hover {
-        transform: scale(1.2);
-        transition: 0.3s;
-        color: red;
-    }
-
-    .bold {
-        text-align: center;
-        margin-top: 50px;
-
-    }
-
-    .bold button:hover {
-        background-color: red;
-        color: white;
-    }
-
-    .bold button {
-        padding: 5px;
-        font-size: 30px;
-        background-color: rgb(158, 12, 12);
-
-    }
-
-    .sang-icons a {
-        display: inline-block;
-        margin-right: 10px;
-        font-size: 20px;
-        color: #393939;
-        background: #222;
-        padding: 10px;
-        border-radius: 50%;
-
-    }
-
-    .sang-icons a:hover {
-        background: red;
-        color: #555454;
-
-    }
-
-    .sup {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-        margin-top: 5%;
-        margin-left: 5%;
-    }
-
-    .sup a {
-        text-align: center;
-    }

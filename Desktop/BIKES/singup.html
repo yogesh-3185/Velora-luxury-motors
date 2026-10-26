@@ -11,31 +11,42 @@
       crossorigin="anonymous">
 </script>
 <style> 
-    .auth-container {
-    height: 100vh;
+.auth-container {
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, black, grey);
+    background: linear-gradient(135deg, black,grey, black);
+   
+}
+.so{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
 }
 
 .auth-box {
-    background-color: white;
     padding: 40px;
-    border-radius: 10px;
-    width: 320px;
+    /* border-radius: 10px; */
+    width: 420px;
+    height: 520px;
     text-align: center;
-    box-shadow: 0px 8px 30px lightyellow;
+    box-shadow: 0px 0px 8px ;
+    border-radius: 0 100px 0 100px ;
+    border: 2px solid orangered;
+
+
+    
 }
 
 .auth-box h2 {
-    margin-bottom: 20px;
+    margin-top: 40px;
     color: black;
 
 }
 
 .auth-box input {
-    width: 100%;
+    width: 70%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid black;
@@ -49,9 +60,9 @@
 }
 
 .auth-box button {
-    width: 100%;
+    width: 70%;
     padding: 10px;
-    background: red;
+    background: orangered;
     color: white;
     border-radius: 5px;
     margin-top: 10px;
@@ -59,19 +70,22 @@
 }
 
 .auth-box button:hover {
-    background-color: #cc0000;
+    background-color:red;
 }
 
 .auth-box p {
-    margin-top: 15px;
+    margin: 10px;
     font-size: 14px;
+    color: aliceblue;
 
 }
 
 .auth-box a {
     color: red;
     text-decoration: none;
-}  
+} 
+
+
 </style>   
 </head>
 <body>
@@ -85,7 +99,6 @@
             <a href="bikedeal.html">bikedeals</a>
             <a href="accessories.html">accessories</a>
             <a href="seaftygear.html">seafty gear</a>
-            <a href="gallery.html">gallery</a>
             <a href="about.html">about</a>
             <a href="contact.html">contact</a>
             <a href="cart.html">cart</a>
@@ -99,7 +112,9 @@
     <!--  -->
     <section class="auth-container">
       <div class="auth-box">
-        <h2>Create Account</h2>
+        <h1>velora</h1>
+        <h2>join the pack</h2>
+        <p>creat your rider profile</p>
 
         <form>
             <input type="texy"placeholder="Full Name" required>
@@ -109,7 +124,7 @@
             <button type="submit">Login</button>
         </form>
 
-        <p>Already have an account?<a href="login.html">login</a></p>
+        <p>Already a member?<a href="login.html">login</a></p>
       </div>
 
     </section>
